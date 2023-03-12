@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        padding-top: 200px;
+      }
+      main {
+        width: 50vw;
+        text-align: center;
+        margin: auto;
+      }
+      fieldset {
+        border: solid 1px black;
+        margin: auto;
+      }
+      .inputs {
+        margin: auto;
+        text-align: center;
+      }
+      input {
+        display: block;
+        width: 400px;
+        height: 35px;
+        margin: 20px auto;
+      }
+      .genderSelect {
+        /* display: flex;
+        justify-content: space-between;
+        align-items: center; */
+      }
+      .submit {
+        width: 200px;
+        height: 35px;
+        color: white;
+        background-color: green;
+        border-radius: 2px;
+        border: none;
+      }
+      label {
+        font-size: small;
+      }
+      .radio {
+        display: inline;
+        width: 15px;
+        height: 15px;
+        margin: 0 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <form action="" onsubmit="submitForm()">
+        <fieldset>
+          <div class="inputs">
+            <input type="text" placeholder="Enter your fullname" required />
+            <input type="email" placeholder="Enter your email" required />
+            <input
+              type="number"
+              placeholder="Enter your phone number"
+              required
+            />
+            <div class="genderSelect">
+              <p>Please Select your Gender</p>
+              <input
+                class="radio"
+                type="radio"
+                name="gender"
+                id="male"
+                value="Male"
+              />
+              <label for="male">Male</label>
+              <input
+                class="radio"
+                type="radio"
+                name="gender"
+                id="female"
+                value="Female"
+              />
+              <label for="female">Female</label>
+              <input
+                class="radio"
+                type="radio"
+                name="gender"
+                id="unspecified"
+                value="Unspecified"
+              />
+              <label for="unspecified">Unspecified</label>
+            </div>
+            <input type="password" placeholder="Enter your password" required />
+            <input class="submit" type="submit" value="Submit" />
+          </div>
+        </fieldset>
+      </form>
+    </main>
+    <script>
+      function submitForm() {
+        alert("Form Submitted successfully");
+      }
+    </script>
+  </body>
+</html>
